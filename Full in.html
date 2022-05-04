@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by 18268064963</title>
+  <link rel="stylesheet" href="./style2.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+    <div class="container">
+      <img
+           src="https://pic3.zhimg.com/v2-81184f95b1676c01b8c03dd5c28523eb_xll.jpg?source=fdaf910d" width=150>
+      <h1 class="site-title">NCC</h1>
+  </div>
+</header>
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+    <li class="mobile-button"><a href="#">Menu</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Course details.html">Course details</a></li>
+    <li><a href="Full in.html">Full in</a></li>
+    <li><a href="Choose.html">Choose</a></li>
+  </ul>
+  </div>
+</nav>
+<h1>Now you need to fill in some basic information.</h1>
+
+
+<html>
+<body>
+<script>  
+function validateform(){  
+var Firstname=document.myform.Firstname.value;
+var Lastname=document.myform.Lastname.value;  
+var Familyaddress=document.myform.Familyaddress.value; 
+var Tel=document.myform.Tel.value;  
+  
+if (Firstname==null || Firstname==""){  
+  alert("First Name can't be blank");  
+  return false;  
+}
+
+if (Lastname==null || Lastname==""){  
+  alert("Last Name can't be blank");  
+  return false;  
+}
+
+ if (Familyaddress==null || Familyaddress==""){  
+  alert("Familyaddress can't be blank");  
+  return false;  
+}
+else if (isNaN(Tel)){
+ alert("Please enter the number")
+  return false;
+}
+if (Tel==null || Tel==""){  
+  alert("Tel can't be blank");  
+  return false;  
+}
+}  
+</script>  
+<body>  
+<form name="myform" method="post" action="mailto:username@hotmail.com" onsubmit="return validateform()" >  
+First Name: <input type="text" name="Firstname"><br/><br>  
+Last Name: <input type="text" name="Lastname"><br/><br> 
+Family address: <input type="text" name="Familyaddress"><br/><br> 
+Tel: <input type="text" name="Tel"><br/><br><br>  
+<input type="submit" value="Submit">  
+</form>  
+</body>
+</html>
+
+
+        <footer class="footer">
+  <div class="container">
+    <p>Name:NCC</p>
+    <P>Address:Yinzhou District, Ningbo City</P>
+    <p>Contact number：1010101010</p>
+    <p>E-mail address：0101010101</p>
+  </div>
+</footer>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by 18268064963</title>
+  <link rel="stylesheet" href="./style1.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header class="header">
+    <div class="container">
+      <img
+           src="https://pic3.zhimg.com/v2-81184f95b1676c01b8c03dd5c28523eb_xll.jpg?source=fdaf910d" width=150>
+      <h1 class="site-title">NCC</h1>
+  </div>
+</header>
+<nav class="main-nav">
+  <div class="container">
+    <ul>
+    <li class="mobile-button"><a href="#">Menu</a></li>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="Course details.html">Course details</a></li>
+    <li><a href="Full in.html">Full in</a></li>
+    <li><a href="Choose.html">Choose</a></li>
+  </ul>
+  </div>
+</nav>
+
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+</style>
+<body>
+
+<div class="w3-content w3-display-container" style="max-width:800px">
+  <img class="mySlides" src="https://www.sbc.usst.edu.cn/_upload/article/images/20/db/51eb69614663affc4f37609446eb/489a3927-8137-45b2-b945-d92c6797b844.jpg" style="width:100%">
+  <img class="mySlides" src="https://tse1-mm.cn.bing.net/th/id/R-C.330a7d5c139b90364520a4fa8073ee37?rik=a2CnPKHrn5F%2fcg&riu=http%3a%2f%2fimg.pconline.com.cn%2fimages%2fupload%2fupc%2ftx%2fitbbs%2f1312%2f04%2fc20%2f29294693_1386142587686_mthumb.jpg&ehk=mJDMFi4DxAfhx3bgkwX1lNjkJU28WS6jPw6gZRU81Is%3d&risl=&pid=ImgRaw&r=0" style="width:100%">
+  <img class="mySlides" src="https://img.zcool.cn/community/01f20d5e71c696a8012165182176e5.jpg@1280w_1l_2o_100sh.jpg" style="width:100%">
+  <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+    <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+</body>
+</html> 
+
+  
+  <article class="post">
+    <div class="container">
+      <h2>About us</h2>
+      <div class="columns">
+        <div class="item">
+          <h4 class="item-title">School Profile</h4>       
+          <p>Our school is an institution of higher learning with a long history and an outstanding reputation. It is located in Hangzhou, a famous historical and cultural city in China and a scenic tourist destination. The predecessor of our school, Qiushi Academy, was founded in 1897 and was one of the earliest new-style institutions of higher learning established by the Chinese themselves. When General Secretary Xi Jinping was in power in Zhejiang, he personally contacted Zhejiang University, visited and guided 18 times, made a series of important instructions for the reform and development of the school, and drew a grand blueprint for building a world-class university with Chinese characteristics at a high level. In the more than 120 years of running a school, Zhejiang University has always adhered to the fine tradition of "seeking truth and innovation" as its school motto, taking the world as its own responsibility, and taking truth as its basis, and gradually formed a Zhejiang University of "diligence, morality, discernment, and sincerity". The common values of people and the spirit of Zhejiang University of "Hainer rivers, open up the real and virtuous, open up the former people, and build our country".</p> </div>
+
+        <div class="item">
+          <h4 class="item-title">school history</h4>
+          <p>In 1928, it was named National Zhejiang University. During the Anti-Japanese War, Zhejiang University moved its school westward, running schools in Zunyi, Meitan and other places in Guizhou for seven years, and then moved back to Hangzhou in the autumn of 1946. In 1952, when the national colleges and universities were adjusted, some departments of Zhejiang University were transferred to sister colleges and universities and the Chinese Academy of Sciences. The main part that remained in Hangzhou was divided into a number of single-subject colleges and universities, and later developed into the original Zhejiang University and Hangzhou University. , Zhejiang Agricultural University and Zhejiang Medical University. In 1998, the four universities with the same roots merged to form the new Zhejiang University, embarking on a new journey of building a world-class university.</p>
+         </div>
+      </div>
+    </div>   
+  </article>  
+  
+<div class="img_wrap">
+<a href="https://cn.bing.com/maps?q=%E5%AE%81%E6%B3%A2%E5%9F%8E%E5%B8%82%E8%81%8C%E4%B8%9A%E6%8A%80%E6%9C%AF%E5%AD%A6%E9%99%A2&form=ANNTH1&refig=ad1d9d3d746e4bdeaa52d474a1692dd9">
+  <img src="https://pic2.zhimg.com/v2-428fe3eef1d42fb4b634a949c959b730_xll.jpg?source=32738c0c" width="350" >
+  </div>
+ 
+  
+  <footer class="footer">
+  <div class="container">
+    <p>Name:NCC</p>
+    <P>Address:Yinzhou District, Ningbo City</P>
+    <p>Contact number：1010101010</p>
+    <p>E-mail address：0101010101</p>
+  </div>
+</footer>
+<!-- partial -->
+  
+</body>
+</html>
